@@ -28,6 +28,11 @@
         prodID += paramStr.charAt(j);
     }
     
+    prodName = decodeURIComponent(prodName);
+    prodID = decodeURIComponent(prodID);
+    
+    $("#productName").text(prodName);
+    
     </script>
 </head>
 <body>

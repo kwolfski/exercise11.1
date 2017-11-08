@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src ="../jquery-3.0.0.js"></script>
      <script>
+         //copied from finished 10.1 & 10.2 exercises
      $(function () {
             $("#products h2.product-name[data-type='mineralwater']").css("background-color", "#2982D0");
             $("#products h2.product-name[data-type='vitamin']").css("background-color", "#12500F");
@@ -29,11 +30,18 @@ $("product-item").each(function () {
     var prodID = 
         encodeURIComponent($(this).data("prod_id"));
     
-    var link = $("<aref='product.html?prodName=" + prodName + "$prodID=" + prodID + "'/>");
+    var link = $("<a href='product.html?prodName=" + prodName + "&prodID=" + prodID + "'/>");
     $(this).children("img").wrap(link);    
+    })
 })
-     
-             })
+         
+        function updateProductView(categoryName, bVisible) {
+            var dataSelectorVal = "";
+            switch (categoryName) {
+                    dataSelectorVal = "h2[data-type='vitamin']";
+                    break;
+            }
+        }
     </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
