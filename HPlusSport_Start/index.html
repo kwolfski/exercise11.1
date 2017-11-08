@@ -49,7 +49,10 @@ $("product-item").each(function () {
                     dataSelectorVal = "h2[data-type='proteinbar']";
                     break;
                     }
-        }
+         
+         $("product-item").has(dataSelectorVal).css('display', bVisible ? "" : "none");
+                 }
+
     </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
