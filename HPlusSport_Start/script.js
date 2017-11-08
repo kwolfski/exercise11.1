@@ -1,1 +1,1 @@
-// I have tried mutliple 
+//following the solution video for Lynda.com challenge
