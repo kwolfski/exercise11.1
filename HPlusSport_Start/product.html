@@ -11,8 +11,12 @@
     var paramStr = window.location.href.slice(paramLoc+1);
     var prodName = "";
     var prodID = "";
-    var i = paramStr.index
-    
+    var i = paramStr.indexOf("prodName=")+9;
+    for (var j = i; j<paramStr.length; j++) {
+        if (paramStr.charAt(j) == "&")
+            break;
+        prodName += paramStr.charAt(j);
+    }    
     
     </script>
 </head>
