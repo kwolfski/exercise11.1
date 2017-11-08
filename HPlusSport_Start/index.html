@@ -38,9 +38,17 @@ $("product-item").each(function () {
         function updateProductView(categoryName, bVisible) {
             var dataSelectorVal = "";
             switch (categoryName) {
+            
+                case "vitamins":
                     dataSelectorVal = "h2[data-type='vitamin']";
                     break;
-            }
+                case "mineralwater":
+                    dataSelectorVal = "h2[data-type='mineralwater']";
+                    break;
+                case "proteinbar":
+                    dataSelectorVal = "h2[data-type='proteinbar']";
+                    break;
+                    }
         }
     </script>
 
